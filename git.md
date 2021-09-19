@@ -1,4 +1,4 @@
-# Git Basics
+# Git123
 
 
 
@@ -37,6 +37,36 @@
 
 
 ### Undoing Things
+
+
+
+### Tagging
+
+Git tags specific points in history as being important. Use this functionality to mark release points(v1.0 and so on).
+
+#### Tag Types
+
+- lightweight: a pointer to a specific commit
+- annotated: stored as full objects in the Git database with additional information like tagging message.
+
+
+
+## Branch Management
+
+- `git branch`: list all the local branches
+
+- `git branch  -v`: list all the local branches together with the latest commit
+- `git branch --merged`: list all branches that are already merged into the branch you're on 
+- `git branch --no-merged`: list all branches that are not merged in yet
+  - listed branches cannot be deleted with `-d`, has to be done with `-D`
+
+
+
+### Branching Workflows
+
+- Long-Running Branches
+  - the stable branches are farther down the line in your commit history, and the bleeding-edge branches are farther up the history
+- Topic Branches
 
 
 
